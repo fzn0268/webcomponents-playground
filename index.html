@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <!-- Load polyfills; note that "loader" will load these async -->
+        <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+        <link rel="import" href="elements/hello-element/hello-element.html">
+    </head>
+    <body>
+        <hello-element></hello-element>
+        <!-- Interact with the upgraded element -->
+        <script>
+            window.addEventListener('WebComponentsReady', function() {
+              // At this point we are guaranteed that all required polyfills have loaded,
+              // all HTML imports have loaded, and all defined custom elements have upgraded
+              let HelloElement = customElements.get('hello-element');
+              let element = document.querySelector('hello-element');
+              console.assert(element instanceof HelloElement);  // 👍
+              //element.someAPI(); // 👍
+            });
+        </script>
+    </body>
+</html>

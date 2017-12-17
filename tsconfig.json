@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es6"
+    },
+    "compileOnSave": true,
+    "include": [
+        "elements"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

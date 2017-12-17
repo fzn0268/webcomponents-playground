@@ -1,0 +1,21 @@
+{
+  "name": "webcomponentsjs-playground",
+  "authors": [
+    "FzN <fzn0268@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "webcomponents.js#^1.0.20"
+  }
+}

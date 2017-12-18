@@ -6,6 +6,7 @@ class HelloElement extends HTMLElement {
     }
 
     strong;
+    em;
 
     constructor() {
         super();
@@ -23,9 +24,12 @@ class HelloElement extends HTMLElement {
 
         // Caches <strong> DOM query
         this.strong = shadowRoot.querySelector('strong');
+        this.em = shadowRoot.querySelector('em');
 
         // Set a default value to the "who" property
         this.who = 'World';
+
+        this.em.textContent = ($.now());
     }
 
     connectedCallback() {
